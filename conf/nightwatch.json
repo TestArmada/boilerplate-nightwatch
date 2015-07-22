@@ -2,19 +2,21 @@
   "src_folders": ["./tests"],
   "output_folder": "reports",
   "custom_commands_path": [
-    "./node_modules/magellan/lib/commands",
+    "./node_modules/testarmada-magellan-nightwatch/lib/commands",
     "./lib/custom_commands"
   ],
-  "custom_assertions_path": ["./node_modules/magellan-nightwatch/lib/assertions"],
+  "custom_assertions_path": [
+    "./node_modules/testarmada-magellan-nightwatch/lib/assertions"
+  ],
 
   "selenium": {
     "start_process": true,
-    "server_path": "./node_modules/magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.43.1.jar",
+    "server_path": "./node_modules/testarmada-magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.43.1.jar",
     "log_path": "reports",
     "host": "127.0.0.1",
     "port": 4444,
     "cli_args": {
-      "webdriver.chrome.driver": "./node_modules/magellan-nightwatch/node_modules/chromedriver/lib/chromedriver/chromedriver",
+      "webdriver.chrome.driver": "./node_modules/testarmada-magellan-nightwatch/node_modules/chromedriver/lib/chromedriver/chromedriver",
       "webdriver.ie.driver": ""
     }
   },
@@ -40,7 +42,7 @@
         "browserName" : "phantomjs",
         "javascriptEnabled" : true,
         "acceptSslCerts" : true,
-        "phantomjs.binary.path" : "./node_modules/magellan-nightwatch/node_modules/phantomjs/bin/phantomjs"
+        "phantomjs.binary.path" : "./node_modules/testarmada-magellan-nightwatch/node_modules/phantomjs/bin/phantomjs"
       }
     },
 

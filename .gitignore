@@ -5,3 +5,4 @@ screenshots
 sauce_connect_log.txt
 sauce_connect*.txt
 .idea
+phantomjsdriver.log

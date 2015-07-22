@@ -6,8 +6,8 @@ module.exports = new Test({
     client.url(this.getSiteURL());
   },
 
-  "Verify Walmart logo is visible": function (client) {
-    client.getEl(".logo");
+  "Verify body is visible": function (client) {
+    client.getEl("body");
   }
 
 });
