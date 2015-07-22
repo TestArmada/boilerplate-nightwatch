@@ -2,14 +2,10 @@ var Test = require("../lib/example-base-test-class");
 
 module.exports = new Test({
 
-  "Load homepage": function (client) {
-    client.url(this.getSiteURL());
-  },
-
   "Search for Sam Walton Book": function (client) {
     client
-      .setElValue(".js-searchbar-input", "Sam Walton Made In America")
-      .clickEl(".js-searchbar-submit")
+      .resizeWindow(1280, 1024)
+      .url("http://www.walmart.com/search/?query=sam%20walton%20made%20in%20america")
   },
 
   "Check product description": function (client) {
