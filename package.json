@@ -1,0 +1,22 @@
+{
+  "name": "magellan-boilerplate",
+  "version": "1.1.0",
+  "description": "example project for magellan tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/magellan",
+    "magellan:setup": "exit 0",
+    "magellan:teardown": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TestArmada/boilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nightwatch": "^0.7.9",
+    "testarmada-magellan": "1.5.16",
+    "testarmada-magellan-nightwatch": "1.4.14"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "src_folders": ["./tests"],
+  "output_folder": "reports",
+  "custom_commands_path": [
+    "./node_modules/magellan/lib/commands",
+    "./lib/custom_commands"
+  ],
+  "custom_assertions_path": ["./node_modules/magellan-nightwatch/lib/assertions"],
+
+  "selenium": {
+    "start_process": true,
+    "server_path": "./node_modules/magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.43.1.jar",
+    "log_path": "reports",
+    "host": "127.0.0.1",
+    "port": 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/magellan-nightwatch/node_modules/chromedriver/lib/chromedriver/chromedriver",
+      "webdriver.ie.driver": ""
+    }
+  },
+
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost",
+      "selenium_port" : 4444,
+      "selenium_host" : "localhost",
+      "silent": true,
+      "sync_test_names": true,
+      "screenshots": {
+        "enabled": false,
+        "path": ""
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    },
+
+    "phantomjs" : {
+      "desiredCapabilities" : {
+        "browserName" : "phantomjs",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "phantomjs.binary.path" : "./node_modules/magellan-nightwatch/node_modules/phantomjs/bin/phantomjs"
+      }
+    },
+
+    "safari": {
+      "desiredCapabilities": {
+        "browserName": "safari"
+      }
+    },
+
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox"
+      }
+    },
+
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      }
+    },
+
+    "sauce": {
+      "selenium_host": "ondemand.saucelabs.com",
+      "selenium_port": 80,
+      "username": "",
+      "access_key": "",
+      "desiredCapabilities": {
+        "browserName": "",
+        "platform": "",
+        "version": "",
+        "tunnel-identifier": ""
+      },
+      "selenium" : {
+        "start_process" : false
+      }
+    }
+  }
+}
