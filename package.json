@@ -1,7 +1,7 @@
 {
-  "name": "magellan-boilerplate",
+  "name": "testarmada-boilerplate",
   "version": "1.1.0",
-  "description": "example project for magellan tests",
+  "description": "example project for testarmada tests",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/magellan",
