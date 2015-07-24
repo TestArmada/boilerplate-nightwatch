@@ -17,6 +17,6 @@
   "dependencies": {
     "nightwatch": "^0.7.9",
     "testarmada-magellan": "1.5.16",
-    "testarmada-magellan-nightwatch": "1.4.14"
+    "testarmada-magellan-nightwatch": "1.4.18"
   }
 }
