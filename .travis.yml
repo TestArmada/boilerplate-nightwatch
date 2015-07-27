@@ -9,7 +9,9 @@ node_js:
 sudo: false
 
 before_install:
-  # GUI for real browsers.
+  # ensure latest npm installed.
   - npm install -g npm
+  - npm --version
+
 
 
