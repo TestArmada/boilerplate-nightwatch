@@ -1,4 +1,4 @@
-Magellan Boilerplate
+test - Magellan Boilerplate
 ====================
 
 This is an example Magellan test suite. To create a new Magellan test suite, make a clone of this project into your own by following the installation example instructions below.
