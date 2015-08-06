@@ -11,7 +11,7 @@
 
   "selenium": {
     "start_process": true,
-    "server_path": "./node_modules/testarmada-magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.43.1.jar",
+    "server_path": "./node_modules/testarmada-magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.46.0.jar",
     "log_path": "reports",
     "host": "127.0.0.1",
     "port": 4444,
