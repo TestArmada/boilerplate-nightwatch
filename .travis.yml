@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - 0.10
+  - 0.12
+
+# Use container-based Travis infrastructure.
+# See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
+sudo: false
+
+before_install:
+  # ensure latest npm installed.
+  - npm install -g npm
+  - npm --version
+
+
+
