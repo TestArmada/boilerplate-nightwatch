@@ -4,7 +4,7 @@
   "description": "example project for testarmada tests",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/magellan",
+    "test": "magellan",
     "magellan:setup": "exit 0",
     "magellan:teardown": "exit 0"
   },
