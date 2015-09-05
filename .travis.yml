@@ -21,6 +21,6 @@ before_install:
   - npm --version
   - export MAGELLAN_BUILD_NAME=$TRAVIS_BUILD_ID
   - export MAGELLAN_BUILD_ID=`date +%s`
-  - export SAUCE_TUNNEL_ID=$TRAVIS_BUILD_ID
+  - export SAUCE_TUNNEL_ID=${TRAVIS_JOB_ID}_${TRAVIS_JOB_NUMBER}
 
 
