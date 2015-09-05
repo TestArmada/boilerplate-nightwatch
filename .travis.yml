@@ -1,7 +1,7 @@
 language: node_js
 
 script:
-  ./node_modules/.bin/magellan --create_tunnels --external_build_id=$TRAVIS_BUILD_ID--sauce --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --max_workers=${MAX_WORKERS} --browsers=$TIER_1_BROWSERS,TIER_2_BROWSERS
+  - ./node_modules/.bin/magellan --create_tunnels --external_build_id=$TRAVIS_BUILD_ID--sauce --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --max_workers=${MAX_WORKERS} --browsers=$TIER_1_BROWSERS,TIER_2_BROWSERS
 
 env:
   - TEST_SUITE=chrome_latest_Windows_2012_R2_Desktop,firefox_latest_Windows_2012_R2_Desktop,IE_11_Windows_2012_R2_Desktop
@@ -19,7 +19,7 @@ before_install:
   # ensure latest npm installed.
   - npm install -g npm
   - npm --version
-  export MAGELLAN_BUILD_NAME=TRAVIS_BUILD_ID
-  export MAGELLAN_BUILD_ID=`date +%s`
+  - export MAGELLAN_BUILD_NAME=TRAVIS_BUILD_ID
+  - export MAGELLAN_BUILD_ID=`date +%s`
 
 
