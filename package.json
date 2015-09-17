@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "nightwatch": "^0.7.9",
-    "testarmada-magellan": "1.6.6",
-    "testarmada-magellan-nightwatch": "1.5.1"
+    "testarmada-magellan": "1.6.11",
+    "testarmada-magellan-nightwatch": "1.5.2"
   }
 }
