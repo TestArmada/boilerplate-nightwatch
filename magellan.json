@@ -1,0 +1,5 @@
+{
+  "reporters": [
+    "./lib/performance_reporter"
+  ]
+}
