@@ -6,14 +6,7 @@ module.exports = new Test({
     client
       .resizeWindow(1280, 1024)
       .url(url)
-      .getPerformance(function (result) {
-        // Send a message to Magellan about this page
-        process.send({
-          type: "performance-metrics",
-          url: url,
-          metrics: result
-        });
-      })
+      .getPerformance(url)
   },
 
   "Check product description": function (client) {
