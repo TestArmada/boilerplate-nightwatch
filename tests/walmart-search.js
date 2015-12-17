@@ -6,6 +6,7 @@ module.exports = new Test({
     hp
     // open url once
       .navigate()
+      .api.resizeWindow(1200, 800)
       .assert.title('Walmart.com: Save money. Live better.')
   },
 
