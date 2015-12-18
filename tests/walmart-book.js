@@ -11,15 +11,7 @@ module.exports = new Test({
   "Check product description": function (client) {
     client
       .assert.elContainsText("[data-item-id='403453'] .tile-heading", "My Story")
-      .assert.elContainsText("[data-item-id='403453'] .media-details", "Paperback")
-      .pause(5000)
-      .getLog('browser', function(logEntriesArray) {
-        console.log('Log length: ' + logEntriesArray.length);
-        logEntriesArray.forEach(function(log) {
-          console.log('[' + log.level + '] ' + log.timestamp + ' : ' + log.message);
-      });
-    });
-
+      .assert.elContainsText("[data-item-id='403453'] .media-details", "Paperback");
   }
 
 
