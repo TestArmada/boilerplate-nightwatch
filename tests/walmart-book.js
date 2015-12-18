@@ -6,20 +6,20 @@ module.exports = new Test({
     client
       .resizeWindow(1280, 1024)
       .url(url)
-      .getPerformance(function (result) {
-        // Send a message to Magellan about this page
-        process.send({
-          type: "performance-metrics",
-          url: url,
-          metrics: result
-        });
-      })
   },
 
   "Check product description": function (client) {
     client
       .assert.elContainsText("[data-item-id='403453'] .tile-heading", "My Story")
       .assert.elContainsText("[data-item-id='403453'] .media-details", "Paperback")
+      .pause(5000)
+      .getLog('browser', function(logEntriesArray) {
+        console.log('Log length: ' + logEntriesArray.length);
+        logEntriesArray.forEach(function(log) {
+          console.log('[' + log.level + '] ' + log.timestamp + ' : ' + log.message);
+      });
+    });
+
   }
 
 
