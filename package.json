@@ -15,9 +15,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "nightwatch": "^0.7.9",
-    "testarmada-magellan": "^3.0.0",
-    "testarmada-magellan-nightwatch": "^2.0.0",
+    "nightwatch": "^0.8.9",
+    "testarmada-magellan": "^4.0.0",
+    "testarmada-magellan-nightwatch": "^3.0.0",
     "testarmada-performance-reporter": "2.0.0"
   }
 }
