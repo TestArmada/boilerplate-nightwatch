@@ -11,7 +11,7 @@ module.exports = new Test({
   "Navigate to magellan-nightwatch repo": function (client) {
     client
       .clickEl("[href='/TestArmada/magellan-nightwatch']")
-      .assert.elContainsText(".repository-description", "Nightwatch.js adapter for Magellan")
+      .assert.elContainsText(".repository-meta-content", "Nightwatch.js adapter for Magellan")
   }
 
 });
