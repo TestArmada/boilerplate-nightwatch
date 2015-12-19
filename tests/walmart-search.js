@@ -29,8 +29,8 @@ module.exports = new Test({
       .assert.containsText('@mainPrice', '$159');
 
     ip.section.aboutProduct
-      .assert.containsText('@specification', 'Specifications')
       .waitForElementVisible('@specification')
+      .assert.containsText('@specification', 'Specifications')
       .assert.containsText('@specification', 'Remote Included: Yes');
 
     client.end();

@@ -40,7 +40,7 @@
         "browserName": "chrome"
       },
       "globals": {
-        "waitForConditionTimeout": 4000
+        "waitForConditionTimeout": 60000
       }
     },
 
