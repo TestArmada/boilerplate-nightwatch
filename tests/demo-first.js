@@ -4,7 +4,7 @@ module.exports = new Test({
 
   "Load demo page": function (client) {
     client
-      .url("http://127.0.0.1:1337/demo-first");
+      .url(this.getSiteURL() + "/demo-first");
   },
 
   "Verify all cities": function (client) {
