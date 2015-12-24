@@ -3,5 +3,6 @@
     "./node_modules/testarmada-performance-reporter/lib/performance_reporter"
   ],
   "sauce": true,
+  "create_tunnels": true,
   "serial": true
 }
