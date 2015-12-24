@@ -2,6 +2,6 @@
   "reporters": [
     "./node_modules/testarmada-performance-reporter/lib/performance_reporter"
   ],
-  "max_workers": 2,
-  "sauce": true
+  "sauce": true,
+  "serial": true
 }
