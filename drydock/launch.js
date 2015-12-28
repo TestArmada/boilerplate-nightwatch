@@ -4,7 +4,7 @@ var Drydock = require("drydock");
 var drydock = function (host, port) {
   var d = new Drydock({
     port: port || 1337,
-    ip: host || "0.0.0.0",
+    ip: host || "127.0.0.1",
     verbose: false,
     initialState: {},
     cors: true
@@ -45,7 +45,7 @@ var drydock = function (host, port) {
 
 
 if (require.main === module) {
-  drydock.start();
+  new drydock().start();
 } else {
   module.exports = drydock;
 }
