@@ -9,6 +9,10 @@
     "./node_modules/testarmada-magellan-nightwatch/lib/assertions"
   ],
 
+  "page_objects_path": [
+    "./lib/pages"
+  ],
+
   "selenium": {
     "start_process": true,
     "server_path": "./node_modules/testarmada-magellan-nightwatch/node_modules/selenium-server/lib/runner/selenium-server-standalone-2.46.0.jar",
@@ -23,9 +27,9 @@
 
   "test_settings": {
     "default": {
-      "launch_url": "http://localhost",
-      "selenium_port" : 4444,
-      "selenium_host" : "localhost",
+      "launch_url": "http://127.0.0.1",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
       "silent": true,
       "sync_test_names": true,
       "screenshots": {
@@ -34,15 +38,18 @@
       },
       "desiredCapabilities": {
         "browserName": "chrome"
+      },
+      "globals": {
+        "waitForConditionTimeout": 60000
       }
     },
 
-    "phantomjs" : {
-      "desiredCapabilities" : {
-        "browserName" : "phantomjs",
-        "javascriptEnabled" : true,
-        "acceptSslCerts" : true,
-        "phantomjs.binary.path" : "./node_modules/testarmada-magellan-nightwatch/node_modules/phantomjs/bin/phantomjs"
+    "phantomjs": {
+      "desiredCapabilities": {
+        "browserName": "phantomjs",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "phantomjs.binary.path": "./node_modules/testarmada-magellan-nightwatch/node_modules/phantomjs/bin/phantomjs"
       }
     },
 
@@ -75,8 +82,8 @@
         "version": "",
         "tunnel-identifier": ""
       },
-      "selenium" : {
-        "start_process" : false
+      "selenium": {
+        "start_process": false
       }
     }
   }
