@@ -33,10 +33,10 @@ module.exports =
           var ds = client.page["demo-second"]();
 
           ds.section.beijing
-            .waitForElementVisible('@title')
-            .assert.containsText("@title", beijing.name)
-            .assert.containsText("@description", beijing.country)
-            .assert.containsText("@content", beijing.description);
+            .getEl('@title')
+            .assert.elContainsText("@title", beijing.name)
+            .assert.elContainsText("@description", beijing.country)
+            .assert.elContainsText("@content", beijing.description);
 
           client.end();
         }
