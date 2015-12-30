@@ -22,6 +22,6 @@
     "testarmada-performance-reporter": "2.0.0",
     "yargs": "1.3.2",
     "lodash": "^3.10.0",
-    "dc": "git+ssh://git@github.com:TestArmada/dpro.git#v1.0.0"
+    "dpro": "^1.0.0"
   }
 }
