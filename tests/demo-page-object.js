@@ -28,10 +28,10 @@ module.exports = new Test({
     var ds = client.page["demo-second"]();
 
     ds.section.beijing
-      .waitForElementVisible('@title')
-      .assert.containsText("@title", "Beijing")
-      .assert.containsText("@description", "China")
-      .assert.containsText("@content", "It is the most populous city in the China");
+      .getEl('@title')
+      .assert.elContainsText("@title", "Beijing")
+      .assert.elContainsText("@description", "China")
+      .assert.elContainsText("@content", "It is the most populous city in the China");
 
     client.end();
   }
