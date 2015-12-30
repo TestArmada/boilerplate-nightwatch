@@ -6,6 +6,7 @@ script:
 env:
   - TEST_SUITE=chrome_latest_Windows_2012_R2_Desktop,firefox_latest_Windows_2012_R2_Desktop,IE_11_Windows_2012_R2_Desktop
   - TEST_SUITE=safari_7_OS_X_10_9_Desktop,IE_8_Windows_2008_Desktop,IE_9_Windows_2008_Desktop,IE_10_Windows_2012_Desktop
+  - DPRO=local
 
 node_js:
   - 0.10
