@@ -20,6 +20,8 @@
     "testarmada-magellan": "^4.0.1",
     "testarmada-magellan-nightwatch": "^3.0.0",
     "testarmada-performance-reporter": "2.0.0",
-    "yargs": "1.3.2"
+    "yargs": "1.3.2",
+    "lodash": "^3.10.0",
+    "dc": "git+ssh://git@github.com:TestArmada/dpro.git#v1.0.0"
   }
 }
