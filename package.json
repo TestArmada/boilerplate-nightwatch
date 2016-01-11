@@ -1,6 +1,6 @@
 {
   "name": "testarmada-boilerplate-nightwatch",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "example project for testarmada tests",
   "main": "index.js",
   "scripts": {
