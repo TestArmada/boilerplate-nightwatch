@@ -1,6 +1,6 @@
 {
   "name": "testarmada-boilerplate-nightwatch",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "example project for testarmada tests",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,9 @@
   "dependencies": {
     "drydock": "^0.4.3",
     "nightwatch": "^0.8.9",
-    "testarmada-magellan": "^4.0.1",
-    "testarmada-magellan-nightwatch": "3.1.0-beta",
+    "testarmada-magellan": "^5.0.0",
+    "testarmada-magellan-nightwatch": "^3.1.0",
+    "testarmada-magellan-nightwatch-plugin": "^3.0.0",
     "testarmada-performance-reporter": "2.0.0",
     "yargs": "1.3.2"
   }
