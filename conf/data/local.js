@@ -12,5 +12,16 @@ module.exports = {
     "timestamp": function () {
       return new Date().getTime();
     }
+  },
+  "loop": {
+    "cities": [{
+      "tokyo": {
+        "name": "Tokyo"
+      }
+    }, {
+      "beijing": {
+        "name": "Beijing"
+      }
+    }]
   }
 }

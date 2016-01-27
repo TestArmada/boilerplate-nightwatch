@@ -1,15 +1,17 @@
 language: node_js
 
 script:
-  - ./node_modules/.bin/magellan --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --browsers=$TIER_1_BROWSERS,$TIER_2_BROWSERS
+  - ./node_modules/.bin/magellan --sauce --create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --browsers=$TIER_1_BROWSERS,$TIER_2_BROWSERS
 
 env:
   - DPRO=local TEST_SUITE=chrome_latest_Windows_2012_R2_Desktop,firefox_latest_Windows_2012_R2_Desktop,IE_11_Windows_2012_R2_Desktop
   - DPRO=local TEST_SUITE=safari_7_OS_X_10_9_Desktop,IE_8_Windows_2008_Desktop,IE_9_Windows_2008_Desktop,IE_10_Windows_2012_Desktop
 
 node_js:
-  - 0.10
-  - 0.12
+  - "node"
+  - "iojs"
+  - "0.12"
+  - "0.10"
 
 # Use container-based Travis infrastructure.
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
