@@ -1,7 +1,7 @@
 language: node_js
 
 script:
-  - ./node_modules/.bin/magellan --sauce --create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --browsers=$TIER_1_BROWSERS,$TIER_2_BROWSERS
+  - DPRO=local ./node_modules/.bin/magellan --sauce --create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --browsers=$TIER_1_BROWSERS,$TIER_2_BROWSERS
 
 env:
   - TEST_SUITE=chrome_latest_Windows_2012_R2_Desktop,firefox_latest_Windows_2012_R2_Desktop,IE_11_Windows_2012_R2_Desktop
