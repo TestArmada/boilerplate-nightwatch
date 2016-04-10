@@ -2,11 +2,11 @@
   "src_folders": ["./tests"],
   "output_folder": "reports",
   "custom_commands_path": [
-    "./node_modules/testarmada-magellan-nightwatch/lib/commands",
+    "./node_modules/testarmada-nightwatch-extra/lib/commands",
     "./lib/custom_commands"
   ],
   "custom_assertions_path": [
-    "./node_modules/testarmada-magellan-nightwatch/lib/assertions"
+    "./node_modules/testarmada-nightwatch-extra/lib/assertions"
   ],
 
   "page_objects_path": [
@@ -15,7 +15,7 @@
 
   "selenium": {
     "start_process": true,
-    "server_path": "./node_modules/selenium-server/lib/runner/selenium-server-standalone-2.46.0.jar",
+    "server_path": "./node_modules/selenium-server/lib/runner/selenium-server-standalone-2.53.0.jar",
     "log_path": "reports",
     "host": "127.0.0.1",
     "port": 4444,
