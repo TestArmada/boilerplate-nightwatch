@@ -61,12 +61,12 @@ npm test
 
 To run the tests included in this boiler plate, simply type:
 ```console
-./node_modules/.bin/magellan --serial
+DPRO=local ./node_modules/.bin/magellan --serial
 ```
 
 If you already have `./node_modules/.bin` in your `PATH`, you can simply type this instead:
 ```console
-magellan --serial
+DPRO=local magellan --serial
 ```
 without `./` or any path prefix.
 
