@@ -2,6 +2,8 @@ var Test = require("../lib/example-base-test-class");
 var dpro = require("dpro");
 
 module.exports = new Test({
+  tags: ["pageobject"],
+
   "Load demo first page": function(client) {
     var df = client.page["demo-first"]();
 
