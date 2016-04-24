@@ -90,7 +90,7 @@ To lint your files, simply run the below command from the root of the boilerplat
 npm run automation-lint
 ```
 
-All `.js` and `.json` files inside `lib` and `tests` will be linted as per the rules defined in `/conf/eslint/.eslintrc-base`.
+All `.js` and `.json` files inside `lib` and `tests` will be linted as per the rules defined in `conf/eslint/.eslintrc-base`.
 
 Notes
 =====
