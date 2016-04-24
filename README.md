@@ -81,6 +81,17 @@ For more information on how to run tests, including in different browsers, in pa
 
 To start developing your own tests, look at `tests/*` and `lib/example-base-test-class.js`.
 
+
+Linting
+========
+
+To lint your files, simply run the below command from the root of the boilerplate project
+```console
+npm run automation-lint
+```
+
+All the JS and JSON files inside lib/ and tests/ folders will be linted as per the rules defined inside `/conf/eslint/.eslintrc-base`.
+
 Notes
 =====
 
