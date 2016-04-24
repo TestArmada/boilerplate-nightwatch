@@ -4,7 +4,7 @@ var dpro = require("dpro");
 module.exports = new Test({
   tags: ["pageobject"],
 
-  "Load demo first page": function(client) {
+  "Load demo first page": function (client) {
     var df = client.page["demo-first"]();
 
     df
@@ -13,31 +13,32 @@ module.exports = new Test({
       .api.resizeWindow(1200, 800);
   },
 
-  "Verify all cities on first page": function(client) {
+  "Verify all cities on first page": function (client) {
     var df = client.page["demo-first"]();
+
     // no need to call `navigate`
     df
       .assert.elContainsText("#tokyo", "Tokyo")
       .assert.elContainsText(".city:eq(1) p:eq(1)", "Europe");
   },
 
-  "Jump to demo second page": function(client) {
+  "Jump to demo second page": function (client) {
     client
       .page["demo-first"]()
       .jumpToSecondDemo();
   },
 
-  "Verify cities on second page": function(client) {
+  "Verify cities on second page": function (client) {
     var ds = client.page["demo-second"]();
 
     ds.section.beijing
-      .getEl('@title')
+      .getEl("@title")
       .assert.elContainsText("#beijing", "Beijing")
       .assert.elContainsText("@description", "China")
       .assert.elContainsText("@content", "It is the most populous city in the China");
   },
 
-  "Verify cities on second page - performance improvement": function(client) {
+  "Verify cities on second page - performance improvement": function (client) {
     var ds = client.page["demo-second"]();
     var beijing = ds.section.beijing;
 
@@ -51,10 +52,10 @@ module.exports = new Test({
         "It is the most populous city in the China");
   },
 
-  "Verify cities on second page - maintenance improvement": function(client) {
+  "Verify cities on second page - maintenance improvement": function (client) {
     var ds = client.page["demo-second"]();
     var beijing = ds.section.beijing;
-    
+
     beijing
       .getEl(beijing.elements.title.selector)
       .assert.elContainsText(beijing.elements.title.selector,
