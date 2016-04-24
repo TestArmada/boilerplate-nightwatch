@@ -1,0 +1,10 @@
+---
+extends:
+  - "eslint-config-defaults/configurations/walmart/es5-node"
+
+rules:
+  "filenames/filenames": 0                      # disable checking of file names
+  "no-magic-numbers": 0                         # disable checking of magic numbers
+  "strict": [2, "never"]                        # disable checking of "require strict"
+  "newline-after-var": [2, "always"]            # new line required after variable declarations
+  "no-multiple-empty-lines": [2, {"max": 1}]    # no multiple empty lines
