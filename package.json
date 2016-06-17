@@ -20,8 +20,8 @@
     "nightwatch": "^0.8.9",
     "phantomjs": "^2.1.3",
     "selenium-server": "^2.53.0",
-    "testarmada-magellan": "^8.0.1",
-    "testarmada-nightwatch-extra": "^1.0.0",
+    "testarmada-magellan": "^8.7.1",
+    "testarmada-nightwatch-extra": "^2.0.0",
     "testarmada-magellan-nightwatch-plugin": "^5.0.0",
     "yargs": "1.3.2",
     "dpro": "^1.0.0"
