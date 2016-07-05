@@ -4,7 +4,7 @@ script:
   - DPRO=local ./node_modules/.bin/magellan --sauce --create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --browsers=$TIER_1_BROWSERS,$TIER_2_BROWSERS
 
 env:
-  - TEST_SUITE=chrome_latest_Windows_2012_R2_Desktop,firefox_latest_Windows_2012_R2_Desktop,IE_11_Windows_2012_R2_Desktop
+  - TEST_SUITE=chrome_latest_Windows_2012_R2_Desktop,firefox_46_Windows_2012_R2_Desktop,IE_11_Windows_2012_R2_Desktop
   - TEST_SUITE=safari_7_OS_X_10_9_Desktop,IE_8_Windows_2008_Desktop,IE_9_Windows_2008_Desktop,IE_10_Windows_2012_Desktop
 
 node_js:
