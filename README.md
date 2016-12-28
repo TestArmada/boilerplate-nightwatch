@@ -1,5 +1,6 @@
 ## Magellan / Nightwatch.js Example Project
 
+test
 This is an example project demonstrating how to run Nightwatch.js tests with Magellan. To create a new suite, make a clone of this project into your own by following the installation example instructions below.
 
 The contents of this project's root directory should become the root directory of your Magellan test suite folder (for example a `./automation` folder in your project).
