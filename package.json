@@ -17,7 +17,7 @@
   "dependencies": {
     "chromedriver": "^2.21.2",
     "drydock": "^0.7.0",
-    "nightwatch": "^0.9.11",
+    "nightwatch": "^0.9.12",
     "phantomjs": "^2.1.3",
     "selenium-server": "^3.0.1",
     "testarmada-magellan": "^8.7.1",
