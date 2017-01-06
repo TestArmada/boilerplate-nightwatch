@@ -23,7 +23,7 @@
     "testarmada-magellan": "^8.7.1",
     "testarmada-nightwatch-extra": "^2.0.0",
     "testarmada-magellan-nightwatch-plugin": "^5.0.0",
-    "yargs": "6.5.0",
+    "yargs": "6.6.0",
     "dpro": "^1.0.0"
   }
 }
