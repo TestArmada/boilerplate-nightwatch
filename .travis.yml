@@ -7,10 +7,10 @@ env:
   - TIER_1_2_BROWSERS=chrome_latest_Windows_2012_R2_Desktop,firefox_46_Windows_2012_R2_Desktop,IE_11_Windows_2012_R2_Desktop,safari_7_OS_X_10_9_Desktop,IE_8_Windows_2008_Desktop,IE_9_Windows_2008_Desktop,IE_10_Windows_2012_Desktop
 
 node_js:
-  - "node"
-  - "iojs"
-  - "0.12"
-  - "0.10"
+  - v7
+  - v6
+  - v5
+  - v4
 
 # Use container-based Travis infrastructure.
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
