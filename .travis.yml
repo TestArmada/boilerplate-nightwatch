@@ -4,7 +4,8 @@ script:
   - DPRO=local ./node_modules/.bin/magellan --sauce --create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --browsers=$TIER_1_2_BROWSERS
 
 env:
-  - TIER_1_2_BROWSERS=
+  - | 
+  TIER_1_2_BROWSERS=
   chrome_latest_Windows_10_Desktop,
   firefox_latest_Windows_10_Desktop,
   safari_7_OS_X_10_9_Desktop,
