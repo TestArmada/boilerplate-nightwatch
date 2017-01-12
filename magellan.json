@@ -1,6 +1,6 @@
 {
   "reporters": [
-    "magellan-bloop"
+    "testarmada-bloop"
   ],
   "framework": "testarmada-magellan-nightwatch-plugin"
 }
