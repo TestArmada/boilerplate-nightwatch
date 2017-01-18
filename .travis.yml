@@ -13,6 +13,10 @@ node_js:
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
+addons:
+  hosts:
+    - travis.dev
+
 before_install:
   # ensure latest npm installed.
   - npm install -g npm
@@ -20,5 +24,7 @@ before_install:
   - export MAGELLAN_BUILD_NAME=${TRAVIS_JOB_ID}_${TRAVIS_JOB_NUMBER}
   - export MAGELLAN_BUILD_ID=`date +%s`
   - export SAUCE_TUNNEL_ID=${TRAVIS_JOB_ID}_${TRAVIS_JOB_NUMBER}
+  - export MOCK_HOSTNAME=travis.dev
+
 
 
