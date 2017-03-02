@@ -20,7 +20,7 @@
     "nightwatch": "^0.9.11",
     "phantomjs": "^2.1.3",
     "selenium-server": "^3.0.1",
-    "testarmada-magellan": "^8.7.1",
+    "testarmada-magellan": "^10.0.0-beta1",
     "testarmada-nightwatch-extra": "^2.0.0",
     "testarmada-bloop": "^0.0.2",
     "testarmada-magellan-nightwatch-plugin": "^5.0.0",
