@@ -30,7 +30,7 @@
   "globals":{"asyncHookTimeout": 60000},
   "test_settings": {
     "default": {
-      "launch_url": "http://travis.dev",
+      "launch_url": "http://127.0.0.1",
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "silent": true,
