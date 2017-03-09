@@ -3,5 +3,8 @@
   "executors": [
     "testarmada-magellan-local-executor",
     "testarmada-magellan-saucelabs-executor"
+  ],
+  "reporters": [
+    "testarmada-bloop"
   ]
 }

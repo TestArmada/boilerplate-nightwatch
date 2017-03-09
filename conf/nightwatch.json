@@ -43,7 +43,8 @@
         "browserName": "chrome"
       },
       "globals": {
-        "waitForConditionTimeout": 60000
+        "waitForConditionTimeout": 60000,
+        "asyncHookTimeout": 60000
       }
     },
     "phantomjs": {
