@@ -1,3 +1,7 @@
 {
-  "framework": "testarmada-magellan-nightwatch-plugin"
+  "framework": "testarmada-magellan-nightwatch-plugin",
+  "executors": [
+    "testarmada-magellan-local-executor",
+    "testarmada-magellan-saucelabs-executor"
+  ]
 }
