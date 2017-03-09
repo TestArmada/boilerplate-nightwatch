@@ -30,7 +30,7 @@
   "globals":{"asyncHookTimeout": 60000},
   "test_settings": {
     "default": {
-      "launch_url": "http://testarmada.dev",
+      "launch_url": "http://travis.dev",
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "silent": true,

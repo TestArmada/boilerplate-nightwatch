@@ -25,8 +25,3 @@ before_install:
   - export MAGELLAN_BUILD_ID=`date +%s`
   - export SAUCE_TUNNEL_ID=${TRAVIS_JOB_ID}_${TRAVIS_JOB_NUMBER}
   - export MOCK_HOSTNAME=travis.dev
-
-
-addons:
-  hosts:
-    - testarmada.dev
