@@ -1,33 +1,36 @@
 {
-  "src_folders": ["./tests"],
+  "src_folders": [
+    "./tests"
+  ],
   "output_folder": "reports",
   "custom_commands_path": [
     "./node_modules/testarmada-nightwatch-extra/lib/commands",
+    "./node_modules/testarmada-nightwatch-extra/lib/commands/mobile",
     "./lib/custom_commands"
   ],
   "custom_assertions_path": [
-    "./node_modules/testarmada-nightwatch-extra/lib/assertions"
+    "./node_modules/testarmada-nightwatch-extra/lib/assertions",
+    "./node_modules/testarmada-nightwatch-extra/lib/assertions/mobile"
   ],
-
   "page_objects_path": [
     "./lib/pages"
   ],
-
   "selenium": {
     "start_process": true,
-    "server_path": "./node_modules/selenium-server/lib/runner/selenium-server-standalone-2.53.0.jar",
+    "server_path": "./node_modules/selenium-server/lib/runner/selenium-server-standalone-3.1.0.jar",
     "log_path": "reports",
     "host": "127.0.0.1",
     "port": 4444,
     "cli_args": {
       "webdriver.chrome.driver": "./node_modules/chromedriver/lib/chromedriver/chromedriver",
+      "webdriver.gecko.driver": "./node_modules/geckodriver/bin/geckodriver",
       "webdriver.ie.driver": ""
     }
   },
-
+  "globals":{"asyncHookTimeout": 60000},
   "test_settings": {
     "default": {
-      "launch_url": "http://127.0.0.1",
+      "launch_url": "http://travis.dev",
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "silent": true,
@@ -44,7 +47,6 @@
         "asyncHookTimeout": 60000
       }
     },
-
     "phantomjs": {
       "desiredCapabilities": {
         "browserName": "phantomjs",
@@ -53,25 +55,39 @@
         "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
       }
     },
-
     "safari": {
       "desiredCapabilities": {
         "browserName": "safari"
       }
     },
-
     "firefox": {
       "desiredCapabilities": {
-        "browserName": "firefox"
+        "browserName": "firefox",
+        "marionette": true
       }
     },
-
     "chrome": {
       "desiredCapabilities": {
         "browserName": "chrome"
       }
     },
-
+    "appiummweb": {
+      "desiredCapabilities": {
+        "browserName": "safari",
+        "appiumVersion": "1.6.3",
+        "automationName": "xcuitest",
+        "platformName": "iOS",
+        "platformVersion": "9.3",
+        "deviceName": "iPhone 6",
+        "waitForAppScript": "true"
+      },
+      "selenium": {
+        "start_process": false
+      },
+      "appium": {
+        "start_process": true
+      }
+    },
     "sauce": {
       "selenium_host": "ondemand.saucelabs.com",
       "selenium_port": 80,
@@ -80,8 +96,7 @@
       "desiredCapabilities": {
         "browserName": "",
         "platform": "",
-        "version": "",
-        "tunnel-identifier": ""
+        "version": ""
       },
       "selenium": {
         "start_process": false

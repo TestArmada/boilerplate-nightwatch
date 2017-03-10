@@ -1,6 +1,50 @@
 {
+  "framework": "testarmada-magellan-nightwatch-plugin",
+  "executors": [
+    "testarmada-magellan-local-executor",
+    "testarmada-magellan-saucelabs-executor"
+  ],
   "reporters": [
     "testarmada-bloop"
   ],
-  "framework": "testarmada-magellan-nightwatch-plugin"
+  "profiles": {
+    "default": [
+      {
+        "browser": "chrome_latest_Windows_10_Desktop",
+        "resolution": "1280x960"
+      },
+      {
+        "browser": "firefox_latest_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_11_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_10_Windows_2012_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_9_Windows_2008_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_8_Windows_2003_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_7_Windows_2003_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_6_Windows_2003_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "safari_7_OS_X_10_9_Desktop",
+        "resolution": "1280x1024"
+      }
+    ]
+  }
 }
