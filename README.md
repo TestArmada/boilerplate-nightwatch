@@ -34,6 +34,8 @@ If not, run:
 npm install -g npm@3
 ```
 
+Also please map `travis.dev` to `127.0.0.1` in your host file.
+
 # Install and Run
 
 ## Installation
