@@ -7,6 +7,10 @@ This is an example project demonstrating how to run magellan with various execut
 
 The contents of this project's root directory should become the root directory of your Magellan test suite folder (for example a `./automation` folder in your project).
 
+------------------BREAKING CHANGE in magellan@10.0.0------------------
+
+If you recently bump magellan to 10.0.0, please follow the [Migration Guide](./migration.md) here.
+
 # What's in the Box
 
 Included in this boilerplate:
