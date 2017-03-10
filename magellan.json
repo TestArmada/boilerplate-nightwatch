@@ -8,7 +8,7 @@
     "testarmada-bloop"
   ],
   "profiles": {
-    "default": [
+    "sauce": [
       {
         "browser": "chrome_latest_Windows_10_Desktop",
         "resolution": "1280x960"
@@ -44,6 +44,14 @@
       {
         "browser": "safari_7_OS_X_10_9_Desktop",
         "resolution": "1280x1024"
+      },
+      {
+        "browser": "iphone_9_3_iOS_iPhone_6_Simulator",
+        "orientation": "portrait"
+      },
+      {
+        "browser": "iphone_10_0_iOS_iPhone_6_Simulator",
+        "orientation": "landscape"
       }
     ]
   }
