@@ -62,8 +62,7 @@
     },
     "firefox": {
       "desiredCapabilities": {
-        "browserName": "firefox",
-        "marionette": true
+        "browserName": "firefox"
       }
     },
     "chrome": {

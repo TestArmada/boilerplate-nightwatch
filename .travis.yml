@@ -1,7 +1,7 @@
 language: node_js
 
 script:
-  - DPRO=local ./node_modules/.bin/magellan --sauce_create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --profile=default
+  - DPRO=local ./node_modules/.bin/magellan --sauce_create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --profile=sauce
 
 node_js:
   - v7

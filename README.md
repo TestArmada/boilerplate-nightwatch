@@ -1,11 +1,13 @@
-## Magellan / Nightwatch.js Example Project
+# Testarmada magellan and nightwatch-extra Example Project
 
-This is an example project demonstrating how to run Nightwatch.js tests with Magellan. To create a new suite, make a clone of this project into your own by following the installation example instructions below.
+[![Build Status](https://api.travis-ci.org/TestArmada/boilerplate-nightwatch.svg?branch=master)](https://travis-ci.org/TestArmada/boilerplate-nightwatch)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+This is an example project demonstrating how to run magellan with various executors to trigger test run using nightwatch-extra.
 
 The contents of this project's root directory should become the root directory of your Magellan test suite folder (for example a `./automation` folder in your project).
 
-What's in the Box
-=================
+# What's in the Box
 
 Included in this boilerplate:
 
@@ -14,75 +16,123 @@ Included in this boilerplate:
   - A `.gitignore` file which ignores Magellan-generated artifacts (logs, etc)
   - Stock configuration (`conf/nightwatch.json`)
   - A place to put custom commands (`lib/custom_commands`)
+  - A place to put custom page objects (`lib/pages`)
 
-Prerequisites
-====================
+In order to speed up the execution of this boilerplate, all tests are mocked with [Drydock](https://github.com/divmain/drydock).
 
-Check that you have at least `npm` version 2.7.1:
+# Prerequisites
 
-```
+Check that you have at least `npm` version 3 or above (required by `appium@1.6.x`):
+
+```bash
 npm --version
 ```
 
 If not, run:
 
+```bash
+npm install -g npm@3
 ```
-npm install -g npm
-```
 
-Installation Example
-====================
+# Install and Run
 
-**1.** Clone `magellan-boilerplate` into an isolated place outside of your project:
-
+## Installation
+**1.** Clone `boilerplate-nightwatch` into an isolated place outside of your project:
 ```console
 cd ~
-git clone git@github.com:TestArmada/boilerplate.git
+git clone git@github.com:TestArmada/boilerplate-nightwatch.git
 ```
 
-**2.** Copy the contents of `boilerplate` into your project test folder, remove `.git`
-
-```console
-cd ~/myproject
-mkdir automated-tests
-cd automated-tests
-cp -R ~/boilerplate ./
-rm -rf .git
-```
-
-**3.** Install npm modules and run example tests
+**3.** Install npm modules
 
 ```console
 npm install
+```
+
+## Run with npm
+```console
 npm test
 ```
 
-**4.** Try the testing workflow
+## Run with more options
 
-To run the tests included in this boiler plate, simply type:
+### Local
+This is to run magellan with [Magellan-local-executor](https://github.com/TestArmada/magellan-local-executor) (which is already configured in `magellan.json`)
+ 
+ 1. Chrome
 ```console
-DPRO=local ./node_modules/.bin/magellan --serial
+DPRO=local ./node_modules/.bin/magellan --local_browser chrome --test tests/demo-first.js --serial
+```
+ 
+ 2. Firefox
+```console
+DPRO=local ./node_modules/.bin/magellan --local_browser firefox --test tests/demo-page-object.js --serial
 ```
 
-If you already have `./node_modules/.bin` in your `PATH`, you can simply type this instead:
+ 3. Appium
+ 
+    To run test with Appium, Xcode and correct version of iOS simulator have to be installed.
 ```console
-DPRO=local magellan --serial
-```
-without `./` or any path prefix.
-
-In the above example, the `--serial` option runs all of your tests one at a time with live output. To get help on command options, type:
-```console
-magellan --help
+DPRO=local ./node_modules/.bin/magellan --local_browser appiummweb --test tests/demo-page-object.js --serial
 ```
 
-For more information on how to run tests, including in different browsers, in parallel, and with filters and tags, see: https://github.com/TestArmada/magellan
+### Saucelabs
+This is to run magellan with [Magellan-saucelabs-executor](https://github.com/TestArmada/magellan-saucelabs-executor) (which is already configured in `magellan.json`). 
 
-**5.** Modify example tests and base class
+All tests have to run with Sauce Connect. 
 
-To start developing your own tests, look at `tests/*` and `lib/example-base-test-class.js`.
+ 1. Chrome and IE11
+ ```console
+ DPRO=local ./node_modules/.bin/magellan --sauce_browsers chrome_latest_Windows_10_Desktop,IE_11_Windows_10_Desktop --sauce_create_tunnels --test tests/demo-page-object.js --serial
+ ```
 
-Notes
-=====
+ 2. iOS simulator with iphone6 and iOS 10.0
+ ```console
+ DPRO=local ./node_modules/.bin/magellan --sauce_browser iphone_10_0_iOS_iPhone_6_Simulator --sauce_create_tunnels --test tests/demo-page-object.js --serial
+ ```
+ 
+### Browserstack
+This is to run magellan with [Magellan-browserstack-executor](https://github.com/TestArmada/magellan-browserstack-executor) 
 
-  - Magellan may support multiple test frameworks, but this boilerplate is based on Nightwatch.js (by using the `magellan-nightwatch` adapter).
-  - This boilerplate project is suitable for use with tests that run against a live server, a QA server, or even a mock (i.e. any use case Magellan supports).
+Please Note: Browserstack executor is still in **early beta**. We'll add the content when it is ready.
+
+# Help
+
+### 1. Magellan help
+All magellan command line arguments, together with its plugin's and executors', can be found by.
+```console
+./node_modules/.bin/magellan --help
+```
+
+### 2. Plugin help
+Command line arguments for plugin could be found by scanning `Framework-specific` keyward in magellan help output. 
+
+Help from [testarmada-magellan-nightwatch-plugin](https://github.com/TestArmada/magellan-nightwatch-plugin)
+```console
+Framework-specific (testarmada-magellan-nightwatch-plugin)
+   --tags=tag1,tag2                     Run all tests that match a list of comma-delimited tags (eg: tag1,tag2)
+   --group=prefix/path                  Run all tests that match a path prefix like ./tests/smoke
+   --test=path/to/test.js               Run one test with a path like ./tests/smoke/test2.js
+   --nightwatch_config=path             Specify nightwatch.json location (magellan-nightwatch)
+   --sync_browsers=safari:10,chrome:54  Specify which browser will run in sync mode for javascript execution
+```
+
+You can also implement your own plugin in order to make magellan talk to more test frameworks. Find more [here]() to implement your own magellan plugin
+
+### 3. Executor help
+Command line arguments for executor could be found by scanning `Executor-specific` keyward in magellan help output.
+
+Help from [testarmada-magellan-sauce-executor](https://github.com/TestArmada/magellan-saucelabs-executor)
+```console
+Executor-specific (testarmada-magellan-sauce-executor)
+   --sauce_browser=browsername          Run tests in chrome, firefox, etc (default: phantomjs).
+   --sauce_browsers=b1,b2,..            Run multiple browsers in parallel.
+   --sauce_list_browsers                List the available browsers configured (Guacamole integrated).
+```
+
+You can also implement your own executor in order to execute magellan test in more environment. Find more [here](https://github.com/TestArmada/magellan-executor) to implement your own magellan executor.
+
+# Configuration
+Magellan reads from both command line arguments and `magellan.json`. Please refer to help section to get the full list of magellan command line arguments.
+
+Please use `./magellan.json` as example to customize your `magellan.json`.
