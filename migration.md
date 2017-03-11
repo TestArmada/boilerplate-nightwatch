@@ -40,7 +40,7 @@ We **strongly** recommend do major version bump for the following repos in your 
 }
 ```
 
-**Please note**: `Nightwatch-extra@4` also has breaking changes. Please refer to [here]() for the migration guide of `Nightwatch-extra@4`.
+**Please note**: `Nightwatch-extra@4` also has breaking changes. Please refer to [here](https://github.com/TestArmada/nightwatch-extra/blob/master/README.md#important-migration-notice-for-nightwatch-extra4) for the migration guide of `Nightwatch-extra@4`.
 
 ## Configuration files
 
