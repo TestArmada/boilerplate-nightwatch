@@ -87,15 +87,36 @@ This is to run magellan with [Magellan-saucelabs-executor](https://github.com/Te
 
 All tests have to run with Sauce Connect. 
 
- 1. Chrome and IE11
+ 1. **Chrome and IE11**
  ```console
  DPRO=local ./node_modules/.bin/magellan --sauce_browsers chrome_latest_Windows_10_Desktop,IE_11_Windows_10_Desktop --sauce_create_tunnels --test tests/demo-page-object.js --serial
  ```
 
- 2. iOS simulator with iphone6 and iOS 10.0
+ 2. **iOS simulator with `iphone6` and `iOS@10.0`**
  ```console
  DPRO=local ./node_modules/.bin/magellan --sauce_browser iphone_10_0_iOS_iPhone_6_Simulator --sauce_create_tunnels --test tests/demo-page-object.js --serial
  ```
+
+ 3. **Android emulator with `Google Nexus 7 HD Emulator` and `android@4.4`**
+
+ You need to disable SSL bumping for `android@4.4` or higher, please refer to [here](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy+FAQS#SauceConnectProxyFAQS-WhyDoMyTestsonAndroidFailWithCertificationErrorsorFailtoLogin?) for explanation.
+
+  **Please Note**: Current [Magellan-Saucelabs-Executor](https://github.com/TestArmada/magellan-saucelabs-executor) doesn't support customized flags while launching Sauce Connect. But you can still use this boilerplate to run test on Saucelabs android emulator by launching [Crows-Nest](https://github.com/TestArmada/crows-nest) locally first. Good news is we're working on integrating `Crows-Nest` as Sauce Connect manager for the saucelabs executor. 
+
+    1. Add following config to `config.json` in `Crows-Nest`, then launch `Crows-Nest`
+
+```javascript
+"tunnel": {
+    "noSslBumpDomains": "travis.dev"
+}
+```
+    2. Use the created `${SAUCE_TUNNEL_ID}` to launch test
+    
+```console
+
+DPRO=local ./node_modules/.bin/magellan --sauce_browsers android_4_4_Android_Google_Nexus_7_HD_Emulator --sauce_tunnel_id ${SAUCE_TUNNEL_ID} --test tests/demo-page-object.js --serial
+```
+
  
 ### Browserstack
 This is to run magellan with [Magellan-browserstack-executor](https://github.com/TestArmada/magellan-browserstack-executor) 
