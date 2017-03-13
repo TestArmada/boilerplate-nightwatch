@@ -25,20 +25,17 @@ Executor is the new concept that we bring into Magellan in version 10.0.0.
 
 ### Dependencies
 
-The following dependencies **require** a major version bump in your `package.json`
+To update dependencies to correct versions, please follow the table below
 
-```javascript
-"dependencies": {
-    "testarmada-magellan": "^10.0.0",
-    "testarmada-magellan-local-executor": "^1.0.0",
-    "testarmada-magellan-nightwatch-plugin": "^6.0.0",
-    "testarmada-magellan-saucelabs-executor": "^1.0.0",
-    "testarmada-nightwatch-extra": "^4.0.0",
-    "testarmada-magellan-admiral-plugin": "^2.0.0",
-    "testarmada-magellan-admiral2-plugin": "^3.0.0",
-    "testarmada-time-stats-reporter": "^2.0.0"
-}
-```
+| Dependency Name |Description| Is Required by Magellan | Version to Be Use|
+|:---------------:|:------:|:---------:|:---------------:|:---------------:|
+|testarmada-magellan-local-executor|run Nightwatch test in local|Yes|^1.0.0|
+|testarmada-magellan-saucelabs-executor|run Nightwatch test on saucelabs|Yes|^1.0.0|
+|testarmada-magellan-nightwatch-plugin|drive Nightwatch test run in Magellan|Yes|^6.0.0|
+|testarmada-nightwatch-extra|Nightwatch addon for extra commands and assertions|Yes|^4.0.0|
+|testarmada-magellan-admiral-plugin|Magellan reporter for Admiral|No|^2.0.0|
+|testarmada-magellan-admiral2-plugin|Magellan reporter for Admiral@2|No|^3.0.0|
+|testarmada-magellan-time-stats-reporter|Magellan test execution time reporter|No|^2.0.0|
 
 **Please note**: `Nightwatch-extra@4` also has breaking changes. Please refer to [here](https://github.com/TestArmada/nightwatch-extra/blob/master/README.md#important-migration-notice-for-nightwatch-extra4) for the migration guide of `Nightwatch-extra@4`.
 
