@@ -110,6 +110,7 @@ All tests have to run with Sauce Connect.
     "noSslBumpDomains": "travis.dev"
 }
 ```
+
     2. Use the created `${SAUCE_TUNNEL_ID}` to launch test
     
 ```console
