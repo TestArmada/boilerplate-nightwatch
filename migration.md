@@ -27,7 +27,7 @@ Executor is the new concept that we bring into Magellan in version 10.0.0.
 
 To update dependencies to correct versions, please follow the table below
 
-| Dependency Name |Description| Is Required by Magellan | Version to Be Use|
+| Dependency Name |Description| Is Required by Magellan | Minimum Version for Magellan@10|
 |:---------------:|:------:|:---------:|:---------------:|:---------------:|
 |testarmada-magellan-local-executor|run Nightwatch test in local|Yes|^1.0.0|
 |testarmada-magellan-saucelabs-executor|run Nightwatch test on saucelabs|Yes|^1.0.0|
