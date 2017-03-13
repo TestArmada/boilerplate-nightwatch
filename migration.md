@@ -27,15 +27,15 @@ Executor is the new concept that we bring into Magellan in version 10.0.0.
 
 To update dependencies to correct versions, please follow the table below
 
-| Dependency Name |Description| Is Required| Minimum Version for Magellan@10|
-|:---------------:|:------:|:---------:|:---------------:|:---------------:|
-|testarmada-magellan-local-executor|run Nightwatch test in local|Yes|^1.0.0|
-|testarmada-magellan-saucelabs-executor|run Nightwatch test on saucelabs|Yes|^1.0.0|
-|testarmada-magellan-nightwatch-plugin|drive Nightwatch test run in Magellan|Yes|^6.0.0|
-|testarmada-nightwatch-extra|Nightwatch addon for extra commands and assertions|Yes|^4.0.0|
-|testarmada-magellan-admiral-plugin|Magellan reporter for Admiral|No|^2.0.0|
-|testarmada-magellan-admiral2-plugin|Magellan reporter for Admiral@2|No|^3.0.0|
-|testarmada-magellan-time-stats-reporter|Magellan test execution time reporter|No|^2.0.0|
+| Dependency Name |Description|Readme|Is Required|Minimum Version for Magellan@10|
+|:---------------:|:------:|:---------:|:--------:|:-------:|:---------------:|
+|testarmada-magellan-local-executor|run Nightwatch test in local|[link](https://github.com/TestArmada/magellan-local-executor/blob/master/README.md)|Yes|^1.0.0|
+|testarmada-magellan-saucelabs-executor|run Nightwatch test on saucelabs|[link](https://github.com/TestArmada/magellan-saucelabs-executor/blob/master/README.md)|Yes|^1.0.0|
+|testarmada-magellan-nightwatch-plugin|drive Nightwatch test run in Magellan|[link](https://github.com/TestArmada/magellan-nightwatch-plugin/blob/master/README.md)|Yes|^6.0.0|
+|testarmada-nightwatch-extra|Nightwatch addon for extra commands and assertions|[link](https://github.com/TestArmada/nightwatch-extra/blob/master/README.md)|Yes|^4.0.0|
+|testarmada-magellan-admiral-plugin|Magellan reporter for Admiral|[link](https://github.com/TestArmada/magellan-admiral-plugin/blob/master/README.md)|No|^2.0.0|
+|testarmada-magellan-admiral2-plugin|Magellan reporter for Admiral@2|[link](https://github.com/TestArmada/magellan-admiral2-plugin/blob/master/README.md)|No|^3.0.0|
+|testarmada-magellan-time-stats-reporter|Magellan test execution time reporter|[link](https://github.com/TestArmada/magellan-time-stats-reporter/blob/master/README.md)|No|^2.0.0|
 
 **Please note**: `Nightwatch-extra@4` also has breaking changes. Please refer to [here](https://github.com/TestArmada/nightwatch-extra/blob/master/README.md#important-migration-notice-for-nightwatch-extra4) for the migration guide of `Nightwatch-extra@4`.
 
