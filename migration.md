@@ -25,7 +25,7 @@ Executor is the new concept that we bring into Magellan in version 10.0.0.
 
 ### Dependencies
 
-We **strongly** recommend do major version bump for the following repos in your `package.json`
+The following dependencies **require** a major version bump in your `package.json`
 
 ```javascript
 "dependencies": {
