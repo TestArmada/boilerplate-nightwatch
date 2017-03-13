@@ -103,15 +103,8 @@ All tests have to run with Sauce Connect.
 
   **Please Note**: Current [Magellan-Saucelabs-Executor](https://github.com/TestArmada/magellan-saucelabs-executor) doesn't support customized flags while launching Sauce Connect. But you can still use this boilerplate to run test on Saucelabs android emulator by launching [Crows-Nest](https://github.com/TestArmada/crows-nest) locally first. Good news is we're working on integrating `Crows-Nest` as Sauce Connect manager for the saucelabs executor. 
 
-    1. Add following config to `config.json` in `Crows-Nest`, then launch `Crows-Nest`
-
-```javascript
-"tunnel": {
-    "noSslBumpDomains": "travis.dev"
-}
-```
-
-    2. Use the created `${SAUCE_TUNNEL_ID}` to launch test
+    a. Add `"tunnel": {"noSslBumpDomains": "travis.dev"}` config to `config.json` in `Crows-Nest`, then launch `Crows-Nest`
+    b. Use the created `${SAUCE_TUNNEL_ID}` to launch test
     
 ```console
 
