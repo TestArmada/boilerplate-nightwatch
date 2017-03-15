@@ -27,7 +27,9 @@
       "webdriver.ie.driver": ""
     }
   },
-  "globals":{"asyncHookTimeout": 60000},
+  "globals": {
+    "asyncHookTimeout": 60000
+  },
   "test_settings": {
     "default": {
       "launch_url": "http://travis.dev",
@@ -97,6 +99,13 @@
         "platform": "",
         "version": ""
       },
+      "selenium": {
+        "start_process": false
+      }
+    },
+    "browserstack": {
+      "selenium_host": "hub-cloud.browserstack.com",
+      "selenium_port": 80,
       "selenium": {
         "start_process": false
       }
