@@ -9,7 +9,7 @@
     "testarmada-bloop"
   ],
   "profiles": {
-    "sauce": [
+    "all": [
       {
         "browser": "chrome_latest_Windows_10_Desktop",
         "resolution": "1280x960"
@@ -53,6 +53,22 @@
       {
         "browser": "iphone_10_0_iOS_iPhone_6_Simulator",
         "orientation": "landscape"
+      },
+      {
+        "browser": "Windows_7_chrome_56_0",
+        "executor": "browserstack"
+      },
+      {
+        "browser": "OS_X_Sierra_firefox_52_0",
+        "executor": "browserstack"
+      },
+      {
+        "browser": "OS_X_Sierra_safari_10_0",
+        "executor": "browserstack"
+      },
+      {
+        "browser": "Windows_10_ie_11_0",
+        "executor": "browserstack"
       }
     ]
   }
