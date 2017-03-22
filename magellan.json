@@ -59,10 +59,6 @@
         "executor": "browserstack"
       },
       {
-        "browser": "OS_X_Sierra_firefox_52_0",
-        "executor": "browserstack"
-      },
-      {
         "browser": "firefox_52_0_OS_X_Sierra",
         "executor": "browserstack"
       },
