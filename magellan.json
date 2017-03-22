@@ -55,7 +55,7 @@
         "orientation": "landscape"
       },
       {
-        "browser": "Windows_7_chrome_56_0",
+        "browser": "chrome_56_0_Windows_7",
         "executor": "browserstack"
       },
       {
@@ -63,11 +63,15 @@
         "executor": "browserstack"
       },
       {
-        "browser": "OS_X_Sierra_safari_10_0",
+        "browser": "firefox_52_0_OS_X_Sierra",
         "executor": "browserstack"
       },
       {
-        "browser": "Windows_10_ie_11_0",
+        "browser": "ie_11_0_Windows_10",
+        "executor": "browserstack"
+      },
+      {
+        "browser": "ipad_ios_9_1_iPad_Pro",
         "executor": "browserstack"
       }
     ]

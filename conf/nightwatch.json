@@ -27,9 +27,6 @@
       "webdriver.ie.driver": ""
     }
   },
-  "globals": {
-    "asyncHookTimeout": 60000
-  },
   "test_settings": {
     "default": {
       "launch_url": "http://travis.dev",
@@ -42,11 +39,15 @@
         "path": ""
       },
       "desiredCapabilities": {
-        "browserName": "chrome"
       },
       "globals": {
         "waitForConditionTimeout": 60000,
-        "asyncHookTimeout": 60000
+        "asyncHookTimeout": 60000,
+        "syncModeBrowserList": [
+          "safari:10",
+          "iphone",
+          "ipad"
+        ]
       }
     },
     "phantomjs": {
