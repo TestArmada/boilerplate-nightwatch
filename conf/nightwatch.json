@@ -90,6 +90,23 @@
         "start_process": true
       }
     },
+    "appiumandroidmweb": {
+      "desiredCapabilities": {
+        "browserName": "Chrome",
+        "appiumVersion": "1.6.3",
+        "platformName": "Android",
+        "platformVersion": "7.0",
+        "deviceName": "Pixel_API_24",
+        "avd": "Pixel_API_24",
+        "avdArgs": "-netfast -noaudio -no-boot-anim"
+      },
+      "selenium": {
+        "start_process": false
+      },
+      "appium": {
+        "start_process": true
+      }
+    },
     "sauce": {
       "selenium_host": "ondemand.saucelabs.com",
       "selenium_port": 80,
