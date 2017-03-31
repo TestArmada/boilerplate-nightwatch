@@ -77,14 +77,14 @@ DPRO=local ./node_modules/.bin/magellan --local_browser firefox --test tests/dem
 
  3. Appium
   
-   1. iOS
+   iOS
 
    **PLEASE NOTE** To run test with iOS, Xcode and correct version of iOS simulator have to be installed.
   ```console
   DPRO=local ./node_modules/.bin/magellan --local_browser appiummweb --test tests/demo-page-object.js --serial
   ```
-  
-   2. Android
+
+   Android
 
    **PLEASE NOTE** To run test with Android, Android SDK, AVD and currect version of emulator have to be installed and created.
   ```console
