@@ -108,7 +108,9 @@ All tests have to run with Sauce Connect.
 
  3. **Android emulator with `Google Nexus 7 HD Emulator` and `android@4.4`**
 
- You need to disable SSL bumping for `android@4.4` or higher, please refer to [here](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy+FAQS#SauceConnectProxyFAQS-WhyDoMyTestsonAndroidFailWithCertificationErrorsorFailtoLogin?) for explanation.
+ You need to disable SSL bumping for `android@4.4` or higher, please refer to [here](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy+FAQS#SauceConnectProxyFAQS-WhyDoMyTestsonAndroidFailWithCertificationErrorsorFailtoLogin?) for explanation. 
+
+ `magellan-saucelabs-executor@1.0.3` supports customized sauce connect flags, please see [tunnel.json](./tunnel.json) for reference.
     
 ```console
 
