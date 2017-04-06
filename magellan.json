@@ -2,8 +2,7 @@
   "framework": "testarmada-magellan-nightwatch-plugin",
   "executors": [
     "testarmada-magellan-local-executor",
-    "testarmada-magellan-saucelabs-executor",
-    "testarmada-magellan-browserstack-executor"
+    "testarmada-magellan-saucelabs-executor"
   ],
   "reporters": [
     "testarmada-bloop"
@@ -53,22 +52,6 @@
       {
         "browser": "iphone_10_0_iOS_iPhone_6_Simulator",
         "orientation": "landscape"
-      },
-      {
-        "browser": "chrome_56_0_Windows_7",
-        "executor": "browserstack"
-      },
-      {
-        "browser": "firefox_52_0_OS_X_Sierra",
-        "executor": "browserstack"
-      },
-      {
-        "browser": "ie_11_0_Windows_10",
-        "executor": "browserstack"
-      },
-      {
-        "browser": "ipad_ios_9_1_iPad_Pro",
-        "executor": "browserstack"
       }
     ]
   }
