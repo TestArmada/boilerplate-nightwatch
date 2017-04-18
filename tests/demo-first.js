@@ -10,7 +10,7 @@ module.exports = new Test({
 
   "Verify all cities": function (client) {
     client
-      .takeElScreenshot(".city:eq(2)", "a.png")
+      .takeElScreenshot(".city:eq(2)", "a")
       .assert.elContainsText("#tokyo", "Tokyo")
       .assert.elContainsText(".city:eq(1) p:eq(1)", "Europe");
   }

@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "DPRO=local ./node_modules/.bin/magellan --local_browsers chrome,firefox",
+    "test:desktop": "DPRO=local ./node_modules/.bin/magellan --local_browsers chrome --test tests/demo-page-object.js",
+    "test:mweb": "DPRO=local ./node_modules/.bin/magellan --local_browsers appiummweb --test tests/demo-page-object.js",
     "magellan:setup": "exit 0",
     "magellan:teardown": "exit 0"
   },
