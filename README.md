@@ -49,7 +49,7 @@ cd ~
 git clone git@github.com:TestArmada/boilerplate-nightwatch.git
 ```
 
-**3.** Install npm modules
+**2.** Install npm modules
 
 ```console
 npm install
@@ -76,11 +76,20 @@ DPRO=local ./node_modules/.bin/magellan --local_browser firefox --test tests/dem
 ```
 
  3. Appium
- 
-    To run test with Appium, Xcode and correct version of iOS simulator have to be installed.
-```console
-DPRO=local ./node_modules/.bin/magellan --local_browser appiummweb --test tests/demo-page-object.js --serial
-```
+  
+   iOS
+
+   **PLEASE NOTE** To run test with iOS, Xcode and correct version of iOS simulator have to be installed.
+  ```console
+  DPRO=local ./node_modules/.bin/magellan --local_browser appiummweb --test tests/demo-page-object.js --serial
+  ```
+
+   Android
+
+   **PLEASE NOTE** To run test with Android, Android SDK, AVD and currect version of emulator have to be installed and created.
+  ```console
+  ANDROID_OPEN_URL=http://10.0.2.2 DPRO=local ./node_modules/.bin/magellan --local_browser appiumandroidmweb --test tests/demo-first.js --serial
+  ```
 
 ### Saucelabs
 This is to run magellan with [Magellan-saucelabs-executor](https://github.com/TestArmada/magellan-saucelabs-executor) (which is already configured in `magellan.json`). 
@@ -99,16 +108,13 @@ All tests have to run with Sauce Connect.
 
  3. **Android emulator with `Google Nexus 7 HD Emulator` and `android@4.4`**
 
- You need to disable SSL bumping for `android@4.4` or higher, please refer to [here](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy+FAQS#SauceConnectProxyFAQS-WhyDoMyTestsonAndroidFailWithCertificationErrorsorFailtoLogin?) for explanation.
+ You need to disable SSL bumping for `android@4.4` or higher, please refer to [here](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy+FAQS#SauceConnectProxyFAQS-WhyDoMyTestsonAndroidFailWithCertificationErrorsorFailtoLogin?) for explanation. 
 
-  **Please Note**: Current [Magellan-Saucelabs-Executor](https://github.com/TestArmada/magellan-saucelabs-executor) doesn't support customized flags while launching Sauce Connect. But you can still use this boilerplate to run test on Saucelabs android emulator by launching [Crows-Nest](https://github.com/TestArmada/crows-nest) locally first. Good news is we're working on integrating `Crows-Nest` as Sauce Connect manager for the saucelabs executor. 
-
-    a. Add `"tunnel": {"noSslBumpDomains": "travis.dev"}` config to `config.json` in `Crows-Nest`, then launch `Crows-Nest`
-    b. Use the created `${SAUCE_TUNNEL_ID}` to launch test
+ `magellan-saucelabs-executor@1.0.3` supports customized sauce connect flags, please see [tunnel.json](./tunnel.json) for reference.
     
 ```console
 
-DPRO=local ./node_modules/.bin/magellan --sauce_browsers android_4_4_Android_Google_Nexus_7_HD_Emulator --sauce_tunnel_id ${SAUCE_TUNNEL_ID} --test tests/demo-page-object.js --serial
+DPRO=local ./node_modules/.bin/magellan --sauce_browsers android_4_4_Android_Google_Nexus_7_HD_Emulator --sauce_tunnel_id ${SAUCE_TUNNEL_ID} --sauce_tunnel_config ./tunnel.json --test tests/demo-page-object.js --serial
 ```
 
  
