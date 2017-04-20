@@ -35,7 +35,7 @@ To update dependencies to correct versions, please follow the table below
 |testarmada-nightwatch-extra|Nightwatch addon for extra commands and assertions|[link](https://github.com/TestArmada/nightwatch-extra/blob/master/README.md)|Yes|^4.0.0|
 |testarmada-magellan-admiral-plugin|Magellan reporter for Admiral|[link](https://github.com/TestArmada/magellan-admiral-plugin/blob/master/README.md)|No|^3.0.0|
 |testarmada-magellan-admiral2-plugin|Magellan reporter for Admiral@2|[link](https://github.com/TestArmada/magellan-admiral2-plugin/blob/master/README.md)|No|^3.0.0|
-|testarmada-magellan-time-stats-reporter|Magellan test execution time reporter|[link](https://github.com/TestArmada/magellan-time-stats-reporter/blob/master/README.md)|No|^2.0.0|
+|testarmada-time-stats-reporter|Magellan test execution time reporter|[link](https://github.com/TestArmada/magellan-time-stats-reporter/blob/master/README.md)|No|^2.0.0|
 
 **Please note**: `Nightwatch-extra@4` also has breaking changes. Please refer to [here](https://github.com/TestArmada/nightwatch-extra/blob/master/README.md#important-migration-notice-for-nightwatch-extra4) for the migration guide of `Nightwatch-extra@4`.
 
