@@ -15,6 +15,7 @@
   "page_objects_path": [
     "./lib/pages"
   ],
+  "globals_path": "./lib/globals.js",
   "selenium": {
     "start_process": true,
     "server_path": "./node_modules/selenium-server/lib/runner/selenium-server-standalone-3.1.0.jar",
