@@ -29,7 +29,7 @@
     "testarmada-bloop": "0.0.4",
     "testarmada-magellan": "^10.0.0",
     "testarmada-magellan-browserstack-executor": "1.0.0-beta2",
-    "testarmada-magellan-local-executor": "^1.0.0",
+    "testarmada-magellan-local-executor": "^2.0.0",
     "testarmada-magellan-nightwatch-plugin": "^6.0.0",
     "testarmada-magellan-saucelabs-executor": "^1.0.0",
     "testarmada-nightwatch-extra": "^4.1.0",
