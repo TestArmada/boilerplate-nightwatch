@@ -53,6 +53,19 @@
         "browser": "iphone_10_0_iOS_iPhone_6_Simulator",
         "orientation": "landscape"
       }
+    ],
+    "appium-ios-app": [
+      {
+        "browser": "iphone_10_0_iOS_iPhone_7_Simulator",
+        "orientation": "portrait",
+        "appium": {
+          "app": "sauce-storage:Walmart_app.zip",
+          "appiumVersion": "1.6.4",
+          "automationName": "xcuitest",
+          "sendKeyStrategy": "setValue",
+          "waitForAppScript": "true"
+        }
+      }
     ]
   }
 }
