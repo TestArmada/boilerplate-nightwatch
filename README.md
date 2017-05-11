@@ -3,7 +3,7 @@
 [![Build Status](https://api.travis-ci.org/TestArmada/boilerplate-nightwatch.svg?branch=master)](https://travis-ci.org/TestArmada/boilerplate-nightwatch)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This is an example project demonstrating how to run magellan with various executors to trigger test run using nightwatch-extra for desktop browsers and mobile browsers.
+This is an example project demonstrating how to run `magellan` with various executors to trigger test run using `nightwatch-extra` for desktop browsers and mobile browsers (`Nightwatch-extra` does support native app test via `appium` at this point, we're still working on the demo test with it right now).
 
 The contents of this project's root directory should become the root directory of your Magellan test suite folder (for example a `./automation` folder in your project).
 
