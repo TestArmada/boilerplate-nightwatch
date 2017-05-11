@@ -3,7 +3,7 @@
 [![Build Status](https://api.travis-ci.org/TestArmada/boilerplate-nightwatch.svg?branch=master)](https://travis-ci.org/TestArmada/boilerplate-nightwatch)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This is an example project demonstrating how to run magellan with various executors to trigger test run using nightwatch-extra.
+This is an example project demonstrating how to run magellan with various executors to trigger test run using nightwatch-extra for desktop browsers and mobile browsers.
 
 The contents of this project's root directory should become the root directory of your Magellan test suite folder (for example a `./automation` folder in your project).
 
@@ -67,12 +67,12 @@ This is to run magellan with [Magellan-local-executor](https://github.com/TestAr
  
  1. Chrome
 ```console
-DPRO=local ./node_modules/.bin/magellan --local_browser chrome --test tests/demo-first.js --serial
+DPRO=local ./node_modules/.bin/magellan --local_browser chrome --test tests/demo-simple.js --serial
 ```
  
  2. Firefox
 ```console
-DPRO=local ./node_modules/.bin/magellan --local_browser firefox --test tests/demo-page-object.js --serial
+DPRO=local ./node_modules/.bin/magellan --local_browser firefox --test tests/demo-web.js --serial
 ```
 
  3. Appium
@@ -81,14 +81,14 @@ DPRO=local ./node_modules/.bin/magellan --local_browser firefox --test tests/dem
 
    **PLEASE NOTE** To run test with iOS, Xcode and correct version of iOS simulator have to be installed.
   ```console
-  DPRO=local ./node_modules/.bin/magellan --local_browser appiummweb --test tests/demo-page-object.js --serial
+  DPRO=local ./node_modules/.bin/magellan --local_browser appiummweb --test tests/demo-mobile-web.js --serial
   ```
 
    Android
 
    **PLEASE NOTE** To run test with Android, Android SDK, AVD and currect version of emulator have to be installed and created.
   ```console
-  ANDROID_OPEN_URL=http://10.0.2.2 DPRO=local ./node_modules/.bin/magellan --local_browser appiumandroidmweb --test tests/demo-first.js --serial
+  ANDROID_OPEN_URL=http://10.0.2.2 DPRO=local ./node_modules/.bin/magellan --local_browser appiumandroidmweb --test tests/demo-mobile-web.js --serial
   ```
 
 ### Saucelabs
@@ -98,12 +98,12 @@ All tests have to run with Sauce Connect.
 
  1. **`Chrome` and `IE11`**
  ```console
- DPRO=local ./node_modules/.bin/magellan --sauce_browsers chrome_latest_Windows_10_Desktop,IE_11_Windows_10_Desktop --sauce_create_tunnels --test tests/demo-page-object.js --serial
+ DPRO=local ./node_modules/.bin/magellan --sauce_browsers chrome_latest_Windows_10_Desktop,IE_11_Windows_10_Desktop --sauce_create_tunnels --test tests/demo-web.js --serial
  ```
 
  2. **iOS simulator with `iphone6` and `iOS@10.0`**
  ```console
- DPRO=local ./node_modules/.bin/magellan --sauce_browser iphone_10_0_iOS_iPhone_6_Simulator --sauce_create_tunnels --test tests/demo-page-object.js --serial
+ DPRO=local ./node_modules/.bin/magellan --sauce_browser iphone_10_0_iOS_iPhone_6_Simulator --sauce_create_tunnels --test tests/demo-mobile-web.js --serial
  ```
 
  3. **Android emulator with `Google Nexus 7 HD Emulator` and `android@4.4`**
@@ -114,7 +114,7 @@ All tests have to run with Sauce Connect.
     
 ```console
 
-DPRO=local ./node_modules/.bin/magellan --sauce_browsers android_4_4_Android_Google_Nexus_7_HD_Emulator --sauce_tunnel_id ${SAUCE_TUNNEL_ID} --sauce_tunnel_config ./tunnel.json --test tests/demo-page-object.js --serial
+DPRO=local ./node_modules/.bin/magellan --sauce_browsers android_4_4_Android_Google_Nexus_7_HD_Emulator --sauce_tunnel_id ${SAUCE_TUNNEL_ID} --sauce_tunnel_config ./tunnel.json --test tests/demo-mobile-web.js --serial
 ```
 
  
