@@ -30,18 +30,6 @@
         "resolution": "1280x1024"
       },
       {
-        "browser": "IE_8_Windows_2003_Desktop",
-        "resolution": "1280x1024"
-      },
-      {
-        "browser": "IE_7_Windows_2003_Desktop",
-        "resolution": "1280x1024"
-      },
-      {
-        "browser": "IE_6_Windows_2003_Desktop",
-        "resolution": "1280x1024"
-      },
-      {
         "browser": "safari_7_OS_X_10_9_Desktop",
         "resolution": "1280x1024"
       },

@@ -39,8 +39,7 @@
         "enabled": false,
         "path": ""
       },
-      "desiredCapabilities": {
-      },
+      "desiredCapabilities": {},
       "globals": {
         "waitForConditionTimeout": 60000,
         "asyncHookTimeout": 60000,
@@ -72,6 +71,25 @@
     "chrome": {
       "desiredCapabilities": {
         "browserName": "chrome"
+      }
+    },
+    "invisiblechrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "chromeOptions": {
+          "args": [
+            "--headless",
+            "--remote-debugging-port=9222"
+          ]
+        }
+      }
+    },
+    "dockerchrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome"
+      },
+      "selenium": {
+        "start_process": false
       }
     },
     "appiummweb": {
