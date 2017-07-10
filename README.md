@@ -53,6 +53,9 @@ git clone git@github.com:TestArmada/boilerplate-nightwatch.git
 
 ```console
 npm install
+
+npm install --global --production windows-build-tools # extra npm for windows only
+npm install cross-env                                 # extra npm for windows only
 ```
 
 ## Run with npm
@@ -122,6 +125,47 @@ DPRO=local ./node_modules/.bin/magellan --sauce_browsers android_4_4_Android_Goo
 This is to run magellan with [Magellan-browserstack-executor](https://github.com/TestArmada/magellan-browserstack-executor) 
 
 Please Note: Browserstack executor is still in **early beta**. We'll add the content when it is ready.
+
+# Install and Run (Windows only)
+
+## Installation
+**1.** Clone `boilerplate-nightwatch` into an isolated place outside of your project:
+```console
+cd ~
+git clone git@github.com:TestArmada/boilerplate-nightwatch.git
+```
+
+**2.** Install npm modules
+
+```console
+npm install
+
+npm install --global --production windows-build-tools # extra npm for windows only
+npm install cross-env                                 # extra npm for windows only
+```
+
+## Configuration
+
+**1.** Change chromedriver location
+
+In `nightwatch.json`, change
+```json
+"webdriver.chrome.driver": "./node_modules/chromedriver/lib/chromedriver/chromedriver"
+```
+
+to
+
+```json
+"webdriver.chrome.driver": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe"
+```
+
+## Run
+
+We use `cross-env` to read environment variables in windows. All commands provided above are available in windows with `./node_modules/.bin/cross-env` in front. For example
+
+```bash
+./node_modules/.bin/cross-env DPRO=local ./node_modules/.bin/magellan --local_browser chrome --test tests/demo-simple.js --serial
+```
 
 # Help
 
