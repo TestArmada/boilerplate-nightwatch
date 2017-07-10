@@ -139,6 +139,7 @@ cd boilerplate-nightwatch
 
 **2.** Install npm modules
 
+Run your terminal in administrator mode
 ```console
 npm install
 
