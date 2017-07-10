@@ -47,6 +47,7 @@ Also please map `travis.dev` to `127.0.0.1` in your host file.
 ```console
 cd ~
 git clone git@github.com:TestArmada/boilerplate-nightwatch.git
+cd boilerplate-nightwatch
 ```
 
 **2.** Install npm modules
@@ -133,6 +134,7 @@ Please Note: Browserstack executor is still in **early beta**. We'll add the con
 ```console
 cd ~
 git clone git@github.com:TestArmada/boilerplate-nightwatch.git
+cd boilerplate-nightwatch
 ```
 
 **2.** Install npm modules
