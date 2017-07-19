@@ -22,7 +22,7 @@
     "chromedriver": "^2.27.2",
     "dpro": "^1.0.0",
     "drydock": "^0.4.3",
-    "geckodriver": "^1.4.0",
+    "geckodriver": "^1.8.0",
     "jimp": "^0.2.27",
     "nightwatch": "^0.9.11",
     "phantomjs": "^2.1.3",
