@@ -30,7 +30,7 @@ To update dependencies to correct versions, please follow the table below
 | Dependency Name | Description | Readme | Is Required | Minimum Version for Magellan@10 |
 |:---------------:|:-----------:|:------:|:-----------:|:-------------------------------:|
 |testarmada-magellan-local-executor|run Nightwatch test in local|[link](https://github.com/TestArmada/magellan-local-executor/blob/master/README.md)|Yes|^1.0.0|
-|testarmada-magellan-saucelabs-executor|run Nightwatch test on saucelabs|[link](https://github.com/TestArmada/magellan-saucelabs-executor/blob/master/README.md)|Yes|^1.0.0|
+|testarmada-magellan-saucelabs-executor|run Nightwatch test on saucelabs|[link](https://github.com/TestArmada/magellan-saucelabs-executor/blob/master/README.md)|Yes|^4.11.0|
 |testarmada-magellan-nightwatch-plugin|drive Nightwatch test run in Magellan|[link](https://github.com/TestArmada/magellan-nightwatch-plugin/blob/master/README.md)|Yes|^6.0.0|
 |testarmada-nightwatch-extra|Nightwatch addon for extra commands and assertions|[link](https://github.com/TestArmada/nightwatch-extra/blob/master/README.md)|Yes|^4.0.0|
 |testarmada-magellan-admiral-plugin|Magellan reporter for Admiral|[link](https://github.com/TestArmada/magellan-admiral-plugin/blob/master/README.md)|No|^3.0.0|
