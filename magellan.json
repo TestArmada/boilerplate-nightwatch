@@ -7,7 +7,15 @@
   "reporters": [
     "testarmada-bloop"
   ],
+  "strategy_bail": "testarmada-magellan-early-bail-strategy",
   "profiles": {
+    "seleniumgrid": [
+      {
+        "browser": "chrome",
+        "resolution": "1280x960",
+        "executor": "seleniumgrid"
+      }
+    ],
     "all": [
       {
         "browser": "chrome_latest_Windows_10_Desktop",

@@ -50,14 +50,6 @@
         ]
       }
     },
-    "phantomjs": {
-      "desiredCapabilities": {
-        "browserName": "phantomjs",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true,
-        "phantomjs.binary.path": "./node_modules/phantomjs/bin/phantomjs"
-      }
-    },
     "safari": {
       "desiredCapabilities": {
         "browserName": "safari"
@@ -78,8 +70,7 @@
         "browserName": "chrome",
         "chromeOptions": {
           "args": [
-            "--headless",
-            "--remote-debugging-port=9222"
+            "--headless"
           ]
         }
       }
@@ -95,11 +86,11 @@
     "appiummweb": {
       "desiredCapabilities": {
         "browserName": "safari",
-        "appiumVersion": "1.6.3",
-        "automationName": "xcuitest",
+        "appiumVersion": "1.6.5",
+        "automationName": "XCUITestest",
         "platformName": "iOS",
-        "platformVersion": "9.3",
-        "deviceName": "iPhone 6",
+        "platformVersion": "10.3",
+        "deviceName": "iPhone 7",
         "waitForAppScript": "true"
       },
       "selenium": {
@@ -112,7 +103,7 @@
     "appiumandroidmweb": {
       "desiredCapabilities": {
         "browserName": "Chrome",
-        "appiumVersion": "1.6.3",
+        "appiumVersion": "1.6.5",
         "platformName": "Android",
         "platformVersion": "7.0",
         "deviceName": "Pixel_API_24",

@@ -1,6 +1,7 @@
 var Test = require("../lib/example-base-test-class");
 
 module.exports = new Test({
+  "@tags": ["mweb"],
 
   "Load goole page": function (client) {
     client
