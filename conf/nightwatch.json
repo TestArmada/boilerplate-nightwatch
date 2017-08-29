@@ -87,7 +87,7 @@
       "desiredCapabilities": {
         "browserName": "safari",
         "appiumVersion": "1.6.5",
-        "automationName": "XCUITestest",
+        "automationName": "XCUITest",
         "platformName": "iOS",
         "platformVersion": "10.3",
         "deviceName": "iPhone 7",

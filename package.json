@@ -6,8 +6,8 @@
   "scripts": {
     "test": "DPRO=local ./node_modules/.bin/magellan --local_browsers chrome,firefox --test tests/demo-simple.js",
     "test:desktop": "DPRO=local ./node_modules/.bin/magellan --local_browsers chrome --test tests/demo-web.js --serial --strategy_bail testarmada-magellan-early-bail-strategy",
-    "test:mobile:ios": "DPRO=local ./node_modules/.bin/magellan --local_browsers appiummweb --test tests/demo-mobile-web.js --serial --sync_browsers safari",
-    "test:mobile:android": "DPRO=local ./node_modules/.bin/magellan --local_browsers appiumandroidmweb --test tests/demo-mobile-web.js --serial",
+    "test:mobile:ios": "DPRO=local ./node_modules/.bin/magellan --local_browsers appiummweb --test tests/demo-simple.js --serial --sync_browsers safari",
+    "test:mobile:android": "DPRO=local ./node_modules/.bin/magellan --local_browsers appiumandroidmweb --test tests/demo-simple.js --serial",
     "magellan:setup": "exit 0",
     "magellan:teardown": "exit 0"
   },

@@ -179,7 +179,7 @@ All magellan command line arguments, together with its plugin's and executors', 
 ```
 
 ### 2. Plugin help
-Command line arguments for plugin could be found by scanning `Framework-specific` keyward in magellan help output. 
+Command line arguments for plugin could be found by scanning `Framework-specific` keyword in magellan help output. 
 
 Help from [testarmada-magellan-nightwatch-plugin](https://github.com/TestArmada/magellan-nightwatch-plugin)
 ```console
@@ -194,7 +194,7 @@ Framework-specific (testarmada-magellan-nightwatch-plugin)
 You can also implement your own plugin in order to make magellan talk to more test frameworks. Find more [here]() to implement your own magellan plugin
 
 ### 3. Executor help
-Command line arguments for executor could be found by scanning `Executor-specific` keyward in magellan help output.
+Command line arguments for executor could be found by scanning `Executor-specific` keyword in magellan help output.
 
 Help from [testarmada-magellan-sauce-executor](https://github.com/TestArmada/magellan-saucelabs-executor)
 ```console
@@ -205,6 +205,17 @@ Executor-specific (testarmada-magellan-sauce-executor)
 ```
 
 You can also implement your own executor in order to execute magellan test in more environment. Find more [here](https://github.com/TestArmada/magellan-executor) to implement your own magellan executor.
+
+### 4. Strategy help
+Command line arguments for strategy could be found by scanning `Strategy-specific` keyword in magellan help output.
+
+Help from [testarmada-magellan-early-bail-strategy](https://github.com/TestArmada/magellan-early-bail-strategy)
+```console
+Strategy-specific (testarmada-magellan-early-bail-strategy)
+   --early_bail_threshold=0.1           Ratio of tests that need to fail before we abandon the build
+   --early_bail_min_attempts=10         Minimum number of tests that need to run before we apply the bail strategy
+```
+
 
 # Configuration
 Magellan reads from both command line arguments and `magellan.json`. Please refer to help section to get the full list of magellan command line arguments.
