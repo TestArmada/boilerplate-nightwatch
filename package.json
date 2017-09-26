@@ -18,7 +18,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "appium": "^1.6.3",
+    "appium": "^1.7.1",
     "chromedriver": "^2.27.2",
     "dpro": "^1.0.0",
     "drydock": "^0.4.3",
