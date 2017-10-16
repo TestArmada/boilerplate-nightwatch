@@ -28,7 +28,7 @@
     "selenium-server": "^3.1.0",
     "testarmada-bloop": "0.0.4",
     "testarmada-magellan": "^10.1.0",
-    "testarmada-magellan-browserstack-executor": "1.0.0-beta3",
+    "testarmada-magellan-browserstack-executor": "1.0.0-beta4",
     "testarmada-magellan-local-executor": "^2.0.0",
     "testarmada-magellan-nightwatch-plugin": "^7.0.0",
     "testarmada-magellan-saucelabs-executor": "^4.0.0",
