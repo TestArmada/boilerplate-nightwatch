@@ -36,26 +36,6 @@
       },
       {
         "browser": "safari_10_OS_X_10_12_Desktop"
-      },
-      {
-        "browser": "firefox_55_0_OS_X_El_Capitan",
-        "executor": "browserstack"
-      },
-      {
-        "browser": "chrome_61_0_OS_X_Sierra",
-        "executor": "browserstack"
-      },
-      {
-        "browser": "ie_11_0_Windows_10",
-        "executor": "browserstack"
-      },
-      {
-        "browser": "safari_10_1_OS_X_Sierra",
-        "executor": "browserstack"
-      },
-      {
-        "browser": "edge_15_0_Windows_10",
-        "executor": "browserstack"
       }
     ],
     "appium-ios-app": [

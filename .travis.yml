@@ -1,7 +1,7 @@
 language: node_js
 
 script:
-  - DPRO=local ./node_modules/.bin/magellan --sauce_create_tunnels --bs_create_tunnel --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --profile all --tags web --max_workers=${MAGELLAN_MAX_WORKERS} --sync_browsers safari:10
+  - DPRO=local ./node_modules/.bin/magellan --sauce_create_tunnels --external_build_id=$TRAVIS_BUILD_ID --bail_time=${MAGELLAN_INDIVIDUAL_TEST_BAIL_TIME} --profile all --tags web --max_workers=${MAGELLAN_MAX_WORKERS} --sync_browsers safari:10
 
 node_js:
   - v7
@@ -23,6 +23,6 @@ before_install:
   - npm --version
   - export MAGELLAN_BUILD_NAME=${TRAVIS_JOB_ID}_${TRAVIS_JOB_NUMBER}
   - export MAGELLAN_BUILD_ID=`date +%s`
-  - export SAUCE_CONNECT_VERSION=4.4.1
+  - export SAUCE_CONNECT_VERSION=4.4.9
   - export MOCK_HOSTNAME=travis.dev
-  - export MAGELLAN_MAX_WORKERS=2
+  - export MAGELLAN_MAX_WORKERS=20
