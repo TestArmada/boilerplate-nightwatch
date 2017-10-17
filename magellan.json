@@ -2,8 +2,7 @@
   "framework": "testarmada-magellan-nightwatch-plugin",
   "executors": [
     "testarmada-magellan-local-executor",
-    "testarmada-magellan-saucelabs-executor",
-    "testarmada-magellan-browserstack-executor"
+    "testarmada-magellan-saucelabs-executor"
   ],
   "reporters": [
     "testarmada-bloop"
@@ -23,11 +22,34 @@
         "resolution": "1280x960"
       },
       {
+        "browser": "chrome_latest_OS_X_10_12_Desktop",
+        "resolution": "1280x960"
+      },
+      {
+        "browser": "chrome_beta_OS_X_10_12_Desktop",
+        "resolution": "1280x960"
+      },
+      {
         "browser": "firefox_latest_Windows_10_Desktop",
         "resolution": "1280x1024"
       },
       {
+        "browser": "firefox_latest_OS_X_10_12_Desktop"
+      },
+      {
+        "browser": "firefox_beta_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
         "browser": "IE_11_Windows_10_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_10_Windows_2012_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
+        "browser": "IE_9_Windows_2008_Desktop",
         "resolution": "1280x1024"
       },
       {
@@ -36,6 +58,9 @@
       },
       {
         "browser": "safari_10_OS_X_10_12_Desktop"
+      },
+      {
+        "browser": "safari_9_OS_X_10_11_Desktop"
       }
     ],
     "appium-ios-app": [
