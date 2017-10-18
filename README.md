@@ -1,7 +1,7 @@
 # Testarmada magellan and nightwatch-extra Example Project
 
-[![Build Status](https://api.travis-ci.org/TestArmada/boilerplate-nightwatch.svg?branch=master)](https://travis-ci.org/TestArmada/boilerplate-nightwatch)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/testarmada_boilerplate.svg)](https://saucelabs.com/u/testarmada_boilerplate)
 
 This is an example project demonstrating how to run `magellan` with various executors to trigger test run using `nightwatch-extra` for desktop browsers and mobile browsers (`Nightwatch-extra` does support native app test via `appium` at this point, we're still working on the demo test with it right now).
 
