@@ -53,6 +53,10 @@
         "resolution": "1280x1024"
       },
       {
+        "browser": "IE_8_Windows_2008_Desktop",
+        "resolution": "1280x1024"
+      },
+      {
         "browser": "microsoftedge_15_Windows_10_Desktop",
         "resolution": "1280x1024"
       },
@@ -61,6 +65,9 @@
       },
       {
         "browser": "safari_9_OS_X_10_11_Desktop"
+      },
+      {
+        "browser": "safari_7_OS_X_10_9_Desktop"
       }
     ],
     "appium-ios-app": [
