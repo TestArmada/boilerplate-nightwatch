@@ -26,10 +26,6 @@
         "resolution": "1280x960"
       },
       {
-        "browser": "chrome_beta_OS_X_10_12_Desktop",
-        "resolution": "1280x960"
-      },
-      {
         "browser": "firefox_latest_Windows_10_Desktop",
         "resolution": "1280x1024"
       },
