@@ -25,7 +25,7 @@
     "geckodriver": "^1.4.0",
     "jimp": "^0.2.27",
     "nightwatch": "^0.9.11",
-    "selenium-server": "^3.1.0",
+    "selenium-server": "^3.11.0",
     "testarmada-bloop": "0.0.4",
     "testarmada-magellan": "^10.1.0",
     "testarmada-magellan-browserstack-executor": "1.0.0-beta3",
