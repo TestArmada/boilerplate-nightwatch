@@ -34,7 +34,7 @@ var drydock = function (host, port) {
         description: "Return one city",
         handler: function (request) {
 
-          return '<!DOCTYPE html>\n<html lang=en-us>\n<head>\n<style>.city{float:left;margin:5px;padding:15px;width:300px;height:300px;border:1px solid black}</style>\n<script>function yeah(){var a=document.getElementById("inp");var b=document.getElementById("description");b.innerText=a.value};</script>\n</head>\n<body>\n<h1>Responsive Web Design Demo Part 2</h1>\n<div class=city>\n<h2 id=beijing>Beijing</h2>\n<p id=description>Beijing is the capital city of China.</p>\n<p id=content>It is the most populous city in the China, with a metropolitan area of over 35 million inhabitants.</p>\n<input type=text id=inp onchange=yeah>\n</div>\n</body>\n</html>';
+          return '<!DOCTYPE html>\n<html lang=en-us>\n<head>\n<style>.city{float:left;margin:5px;padding:15px;width:300px;height:300px;border:1px solid black}</style>\n<script>function yeah(){var a=document.getElementById("inp");var b=document.getElementById("description");b.innerText=a.value};</script>\n</head>\n<body>\n<h1>Responsive Web Design Demo Part 2</h1>\n<div class=city>\n<h2 id=beijing>Beijing</h2>\n<p id=description>Beijing is the capital city of China.</p>\n<p id=content>It is the most populous city in the China, with a metropolitan area of over 35 million inhabitants.</p>\n<input type=text id=inp onchange="yeah()">\n</div>\n</body>\n</html>';
         }
       }
     }

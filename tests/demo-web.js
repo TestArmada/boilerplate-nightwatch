@@ -63,5 +63,20 @@ module.exports = new Test({
         dpro.beijing.description)
       .assert.elContainsText(beijing.elements.content.selector,
         dpro.beijing.content);
+  }, 
+
+  "Verify type in on second page": function(client) {
+    var ds = client.page["demo-second"]();
+    var beijing = ds.section.beijing;
+
+    beijing
+      .setElValue(beijing.elements.input.selector, "hahahaha")
+      .api.keys([client.Keys.ENTER])
+      .assert.elContainsText(beijing.elements.title.selector,
+        dpro.beijing.title)
+      .assert.elContainsText(beijing.elements.description.selector,
+        "hahahaha")
+      .assert.elContainsText(beijing.elements.content.selector,
+        dpro.beijing.content);
   }
 });
