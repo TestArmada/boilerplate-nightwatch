@@ -24,5 +24,5 @@ before_install:
   - export MAGELLAN_BUILD_NAME=${TRAVIS_JOB_ID}_${TRAVIS_JOB_NUMBER}
   - export MAGELLAN_BUILD_ID=`date +%s`
   - export SAUCE_CONNECT_VERSION=4.4.9
-  - export MOCK_HOSTNAME=travis.dev
+  - export MOCK_HOSTNAME=dev.walmart.com
   - export MAGELLAN_MAX_WORKERS=7
