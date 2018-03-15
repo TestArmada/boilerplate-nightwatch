@@ -71,12 +71,7 @@ module.exports = new Test({
 
     beijing
       .setElValue(beijing.elements.input.selector, "hahahaha")
-      .api.keys([client.Keys.ENTER])
       .assert.elContainsText(beijing.elements.title.selector,
-        dpro.beijing.title)
-      .assert.elContainsText(beijing.elements.description.selector,
-        "hahahaha")
-      .assert.elContainsText(beijing.elements.content.selector,
-        dpro.beijing.content);
+        dpro.beijing.title);
   }
 });
