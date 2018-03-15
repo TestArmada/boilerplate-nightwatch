@@ -30,7 +30,7 @@
   },
   "test_settings": {
     "default": {
-      "launch_url": "http://travis.dev",
+      "launch_url": "http://dev.walmart.com",
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "silent": true,

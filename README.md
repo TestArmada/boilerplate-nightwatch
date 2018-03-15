@@ -39,7 +39,7 @@ If not, run:
 npm install -g npm@3
 ```
 
-Also please map `travis.dev` to `127.0.0.1` in your host file.
+Also please map `dev.walmart.com` to `127.0.0.1` in your host file.
 
 # Install and Run
 
