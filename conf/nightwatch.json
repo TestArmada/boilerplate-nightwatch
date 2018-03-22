@@ -48,7 +48,10 @@
           "iphone",
           "ipad"
         ]
-      }
+      },
+      "plugins": [
+        "./lib/drydock.js"
+      ]
     },
     "safari": {
       "desiredCapabilities": {
