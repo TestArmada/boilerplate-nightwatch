@@ -30,7 +30,7 @@
     "testarmada-magellan": "^10.1.0",
     "testarmada-magellan-browserstack-executor": "1.0.0-beta3",
     "testarmada-magellan-local-executor": "^2.0.0",
-    "testarmada-magellan-nightwatch-plugin": "^7.0.0",
+    "testarmada-magellan-nightwatch-plugin": "^8.0.0",
     "testarmada-magellan-saucelabs-executor": "^4.11.1",
     "testarmada-nightwatch-extra": "^5.0.0",
     "testarmada-magellan-early-bail-strategy": "^1.0.0",
