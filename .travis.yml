@@ -8,6 +8,7 @@ node_js:
   - v7
   - v6
   - v5
+  - 10
 
 # Use container-based Travis infrastructure.
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
