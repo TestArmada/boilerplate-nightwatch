@@ -4,10 +4,12 @@ script:
   - DPRO=local ./node_modules/.bin/magellan --sauce_create_tunnels --external_build_id=$TRAVIS_BUILD_ID --profile all --tags pageobject --max_workers=${MAGELLAN_MAX_WORKERS} --sync_browsers safari:10
 
 node_js:
-  - v8
-  - v7
-  - v6
-  - v5
+  - node
+  - 9
+  - 8
+  - 7
+  - 6
+  - 5
 
 # Use container-based Travis infrastructure.
 # See: http://docs.travis-ci.com/user/workers/container-based-infrastructure/
