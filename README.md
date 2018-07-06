@@ -222,3 +222,6 @@ Strategy-specific (testarmada-magellan-early-bail-strategy)
 Magellan reads from both command line arguments and `magellan.json`. Please refer to help section to get the full list of magellan command line arguments.
 
 Please use `./magellan.json` as example to customize your `magellan.json`.
+
+## License
+Documentation in this project is licensed under Creative Commons Attribution 4.0 International License. Full details available at https://creativecommons.org/licenses/by/4.0
