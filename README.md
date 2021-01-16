@@ -1,3 +1,7 @@
+# :warning::warning: DEPRECATED :warning::warning:
+
+This project, and it's related TestArmada projects, will no longer be supported. No further work from the owners will be done, and no PRs will be reviewed.
+
 # Testarmada magellan and nightwatch-extra Example Project
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/testarmada_boilerplate.svg)](https://saucelabs.com/u/testarmada_boilerplate)
